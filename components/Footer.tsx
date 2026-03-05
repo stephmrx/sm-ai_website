@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <div className="flex items-center space-x-2">
           <span className="text-sm font-bold tracking-tighter text-white">SM.AI</span>
           <span className="text-gray-600 text-xs">/</span>
-          <span className="text-gray-500 text-[10px] tracking-widest uppercase"> Decision Intelligence Strategist | AI Transformation, Data & Analytics Expert </span>
+          <span className="text-gray-500 text-[10px] tracking-widest uppercase"> Decision Intelligence | AI Transformation | Data & Analytics </span>
         </div>
         
         <div className="text-gray-500 text-[10px] tracking-widest uppercase">
