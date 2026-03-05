@@ -79,7 +79,7 @@ const Services: React.FC = () => {
           <h2 className="text-xs font-bold tracking-[0.3em] text-blue-500 uppercase mb-4 italic"> Journey </h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight"> Your Data, Analytics & AI Journey </h3>
           <p className="mt-6 text-gray-400 text-lg font-light leading-relaxed max-w-2xl">
-            Our services are designed as a clear, five-step journey to transform your data and business expertise into your most profitable assets. We define the strategy, deploy the foundation, unlock the insights, design decision intelligence frameworks and integrate AI & Automation solutions tailored to your Business"  
+            Our services are designed as a five-step journey to transform your data and business expertise into your most profitable assets. We define the strategy, deploy the foundation, unlock the insights, design decision intelligence frameworks and integrate AI & Automation solutions tailored to your Business"  
           </p>
         </div>
 
