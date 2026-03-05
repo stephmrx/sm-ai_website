@@ -131,7 +131,7 @@ const Services: React.FC = () => {
                   href="#contact" 
                   className="px-10 py-4 bg-white text-black font-bold tracking-widest text-xs uppercase hover:bg-blue-600 hover:text-white transition-all duration-500 rounded-sm shadow-2xl"
                 >
-                  Deploy your System
+                  Deploy your Decision Intelligence System
                 </a>
             </div>
         </div>
