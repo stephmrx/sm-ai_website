@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
               Let's design intelligent systems together.
             </h3>
             <p className="text-gray-400 text-xl font-light mb-12 leading-relaxed">
-              Whether you are looking for a Director of AI Transformation, Data & Analytics | Seek strategic guidance | Require a specific delivery or full scale end to end implementation. I can help on each stage of your Data, Analytics and AI journey.
+              Whether seek strategic guidance, require tailored project delivery, or full scale end to end implementation. I can help on each stage of your Data, Analytics and AI journey.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
