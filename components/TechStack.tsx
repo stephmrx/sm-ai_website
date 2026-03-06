@@ -8,12 +8,15 @@ const tools = [
   { name: 'Python', slug: 'python' },
   { name: 'SQL', slug: 'postgresql' },
   { name: 'Javascript', slug: 'javascript' },
+  { name: 'Gitub', slug: 'gitub' },
   { name: 'HEX', slug: 'hex' },
   { name: 'Looker', slug: 'looker' },
   { name: 'Tableau', slug: 'tableau' },
   { name: 'Metabase', slug: 'metabase' },
   { name: 'Amplitude', slug: 'amplitude' },
   { name: 'Mixpanel', slug: 'mixpanel' },
+  { name: 'Hubspot', slug: 'hubspot' },
+  { name: 'Mailchimp', slug: 'mailchimp' },
   { name: 'Google Analytics', slug: 'googleanalytics' },
   { name: 'Salesforce', slug: 'salesforce' },
   { name: 'Fivetran', slug: 'fivetran' },
@@ -25,6 +28,7 @@ const tools = [
   { name: 'Trello', slug: 'trello' },
   { name: 'Linear', slug: 'linear' },
   { name: 'Airtable', slug: 'airtable' },
+  { name: 'Typeform', slug: 'typeform' },
 ];
 
 const TechStack: React.FC = () => {
