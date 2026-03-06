@@ -19,7 +19,11 @@ const App: React.FC = () => {
       } else {
         setActivePage('home');
       }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      
+      // Only scroll if hash exists and it's not for anchor navigation
+      if (hash && hash !== 'approach' && hash !== 'contact' && hash !== 'services' && hash !== 'techstack') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     };
 
     window.addEventListener('hashchange', handleHash);
