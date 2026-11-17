@@ -7,7 +7,8 @@ const EvolutionPhase: React.FC<{
   focus: string;
   achievements: string[];
   companies: string[];
-}> = ({ phase, title, years, focus, achievements, companies }) => (
+  links?: { label: string; href: string }[];
+}> = ({ phase, title, years, focus, achievements, companies, links }) => (
   <div className="relative pl-12 pb-24 border-l border-white/10 group last:border-0">
     <div className="absolute top-0 left-[-6px] w-3 h-3 bg-blue-500 rounded-full group-hover:scale-150 transition-transform shadow-[0_0_15px_rgba(59,130,246,0.5)]"></div>
     
@@ -27,6 +28,15 @@ const EvolutionPhase: React.FC<{
             </div>
           ))}
         </div>
+        {links && (
+          <div className="flex flex-wrap gap-3 mt-6">
+            {links.map((l) => (
+              <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300 border border-blue-500/30 hover:border-blue-400 px-3 py-1.5 rounded-sm transition-colors">
+                {l.label} ↗
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   </div>
@@ -86,6 +96,25 @@ const Experience: React.FC = () => {
               "Automation of request intake and LLM integration",
               "Deployment of AI data self service and litterary tooling",
               "AI data governance conformed to EU-AI act & GDPR", 
+            ]}
+          />
+
+          <EvolutionPhase
+            phase="Phase 4"
+            title="Agentic Systems & Applied AI Ventures"
+            years="2026 and onward"
+            companies={["SM.AI", "Scalable Impact", "WonderWriter", "Ayvah"]}
+            focus="Moving from advising on AI to building and operating it. Deploying agentic automation for clinics, launching an AI-native consumer product, and shipping decision systems end to end."
+            achievements={[
+              "Scalable Impact: agentic AI, automation & analytics stack for a clinic group handling patient bookings, follow-ups and loyalty upsell",
+              "WonderWriter: AI storybook product built end to end, from GTM and pricing to CAC / ROAS / LTV acquisition on Meta, Pinterest, GA and PostHog",
+              "Ayvah: applied AI venture work alongside Scalable Impact and WonderWriter",
+              "CLI coding agents (Claude Code, Codex) with MCP, N8N and Snowflake for reporting, targeting and monitoring"
+            ]}
+            links={[
+              { label: "scalable-impact.io", href: "https://scalable-impact.io/en/" },
+              { label: "wonderwriter-ai.com", href: "https://wonderwriter-ai.com/" },
+              { label: "ayvah.ai", href: "http://ayvah.ai/" }
             ]}
           />
         </div>
