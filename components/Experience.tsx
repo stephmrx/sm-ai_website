@@ -60,7 +60,7 @@ const Experience: React.FC = () => {
             title="Analytics Foundations"
             years="Early Career"
             companies={["Interworks", "HelloFresh"]}
-            focus="Establishing the primitives of data analytics & BI strategy. Turning data into robust frameworks for reporting and experimentation."
+            focus="Learning the foundations of data analytics & BI strategy. Turning data into robust frameworks for reporting and experimentation."
             achievements={[
               "Built complex KPI frameworks",
               "Revenue modeling & forecasting",
@@ -104,17 +104,15 @@ const Experience: React.FC = () => {
             title="Agentic Systems & Applied AI Ventures"
             years="2026 and onward"
             companies={["SM.AI", "Scalable Impact", "WonderWriter", "Ayvah"]}
-            focus="Moving from advising on AI to building and operating it. Deploying agentic automation for clinics, launching an AI-native consumer product, and shipping decision systems end to end."
+            focus="Moving from advising on AI to building and operating it. Deploying agentic automation for clients, launching an AI-native consumer product, and shipping decision systems end to end."
             achievements={[
-              "Scalable Impact: agentic AI, automation & analytics stack for a clinic group handling patient bookings, follow-ups and loyalty upsell",
-              "WonderWriter: AI storybook product built end to end, from GTM and pricing to CAC / ROAS / LTV acquisition on Meta, Pinterest, GA and PostHog",
-              "Ayvah: applied AI venture work alongside Scalable Impact and WonderWriter",
+              "Scalable Impact: agentic AI, automation & analytics stack for a clinic group handling patient reception calls, bookings & rescheduling, follow-ups",
+              "WonderWriter: AI  product built end to end, launched and operating on AI automation",
               "CLI coding agents (Claude Code, Codex) with MCP, N8N and Snowflake for reporting, targeting and monitoring"
             ]}
             links={[
               { label: "scalable-impact.io", href: "https://scalable-impact.io/en/" },
               { label: "wonderwriter-ai.com", href: "https://wonderwriter-ai.com/" },
-              { label: "ayvah.ai", href: "http://ayvah.ai/" }
             ]}
           />
         </div>
