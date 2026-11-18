@@ -55,31 +55,20 @@ const Experience: React.FC = () => {
         </div>
 
         <div className="relative">
-          <EvolutionPhase 
-            phase="Phase 1"
-            title="Analytics Foundations"
-            years="Early Career"
-            companies={["Interworks", "HelloFresh"]}
-            focus="Learning the foundations of data analytics & BI strategy. Turning data into robust frameworks for reporting and experimentation."
+          <EvolutionPhase
+            phase="Phase 4"
+            title="Agentic Systems & Applied AI Ventures"
+            years="2026 and onward"
+            companies={["SM.AI", "Scalable Impact", "WonderWriter", "Ayvah"]}
+            focus="Moving from advising on AI to building and operating it. Deploying agentic automation for clients, launching an AI-native consumer product, and shipping decision systems end to end."
             achievements={[
-              "Built complex KPI frameworks",
-              "Revenue modeling & forecasting",
-              "Experimentation pipeline design",
-              "BI Infrastructure deployment"
+              "Scalable Impact: agentic AI, automation & analytics stack for a clinic group handling patient reception calls, bookings & rescheduling, follow-ups",
+              "WonderWriter: AI  product built end to end, launched and operating on AI automation",
+              "CLI coding agents (Claude Code, Codex) with MCP, N8N and Snowflake for reporting, targeting and monitoring"
             ]}
-          />
-          
-          <EvolutionPhase 
-            phase="Phase 2"
-            title="Scaling Decision Infrastructure"
-            years="Growth Era"
-            companies={["Lime", "Bridge-U", "Consulting Missions"]}
-            focus="Embedding data into the central nervous system of hyper-growth startups. Redesigning organizational processes into reliable decision systems."
-            achievements={[
-              "Growth & Ops cross-functional analytics",
-              "QBR process systemization",
-              "Data governance at scale",
-              "Embedded analytics architecture"
+            links={[
+              { label: "scalable-impact.io", href: "https://scalable-impact.io/en/" },
+              { label: "wonderwriter-ai.com", href: "https://wonderwriter-ai.com/" },
             ]}
           />
 
@@ -99,20 +88,31 @@ const Experience: React.FC = () => {
             ]}
           />
 
-          <EvolutionPhase
-            phase="Phase 4"
-            title="Agentic Systems & Applied AI Ventures"
-            years="2026 and onward"
-            companies={["SM.AI", "Scalable Impact", "WonderWriter", "Ayvah"]}
-            focus="Moving from advising on AI to building and operating it. Deploying agentic automation for clients, launching an AI-native consumer product, and shipping decision systems end to end."
+          <EvolutionPhase 
+            phase="Phase 2"
+            title="Scaling Decision Infrastructure"
+            years="Growth Era"
+            companies={["Lime", "Bridge-U", "Consulting Missions"]}
+            focus="Embedding data into the central nervous system of hyper-growth startups. Redesigning organizational processes into reliable decision systems."
             achievements={[
-              "Scalable Impact: agentic AI, automation & analytics stack for a clinic group handling patient reception calls, bookings & rescheduling, follow-ups",
-              "WonderWriter: AI  product built end to end, launched and operating on AI automation",
-              "CLI coding agents (Claude Code, Codex) with MCP, N8N and Snowflake for reporting, targeting and monitoring"
+              "Growth & Ops cross-functional analytics",
+              "QBR process systemization",
+              "Data governance at scale",
+              "Embedded analytics architecture"
             ]}
-            links={[
-              { label: "scalable-impact.io", href: "https://scalable-impact.io/en/" },
-              { label: "wonderwriter-ai.com", href: "https://wonderwriter-ai.com/" },
+          />
+
+          <EvolutionPhase 
+            phase="Phase 1"
+            title="Analytics Foundations"
+            years="Early Career"
+            companies={["Interworks", "HelloFresh"]}
+            focus="Learning the foundations of data analytics & BI strategy. Turning data into robust frameworks for reporting and experimentation."
+            achievements={[
+              "Built complex KPI frameworks",
+              "Revenue modeling & forecasting",
+              "Experimentation pipeline design",
+              "BI Infrastructure deployment"
             ]}
           />
         </div>
