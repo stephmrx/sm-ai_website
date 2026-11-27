@@ -7,15 +7,18 @@ import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WorkUseCases from './components/WorkUseCases';
 
 const App: React.FC = () => {
-  const [activePage, setActivePage] = useState<'home' | 'experience'>('home');
+  const [activePage, setActivePage] = useState<'home' | 'experience' | 'work'>('home');
 
   useEffect(() => {
     const handleHash = () => {
       const hash = window.location.hash.replace('#', '');
       if (hash === 'evolution') {
         setActivePage('experience');
+      } else if (hash === 'work') {
+        setActivePage('work');
       } else {
         setActivePage('home');
       }
@@ -42,6 +45,11 @@ const App: React.FC = () => {
             <Approach />
             <Services />
             <TechStack />
+            <Contact />
+          </div>
+        ) : activePage === 'work' ? (
+          <div className="pt-32 pb-20 space-y-24 md:space-y-32">
+            <WorkUseCases />
             <Contact />
           </div>
         ) : (
