@@ -21,6 +21,7 @@ interface LightboxProps {
 // scrolls on both axes while the page underneath stays locked.
 const Lightbox: React.FC<LightboxProps> = ({ image, onClose }) => {
   const closeRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const [actual, setActual] = useState(false);
 
   useEffect(() => {
@@ -33,6 +34,23 @@ const Lightbox: React.FC<LightboxProps> = ({ image, onClose }) => {
 
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
+      // Keep Tab focus inside the dialog.
+      if (e.key === 'Tab' && dialogRef.current) {
+        const items = dialogRef.current.querySelectorAll<HTMLElement>('button');
+        if (!items.length) return;
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        } else if (!dialogRef.current.contains(document.activeElement)) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     };
     window.addEventListener('keydown', onKey);
     return () => {
@@ -49,7 +67,8 @@ const Lightbox: React.FC<LightboxProps> = ({ image, onClose }) => {
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={image.alt}
+      ref={dialogRef}
+      aria-label={image.caption}
       className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex flex-col"
       onClick={onClose}
     >
