@@ -1,4 +1,4 @@
-bimport React from 'react';
+import React from 'react';
 
 const FlowIcon: React.FC<{ type: string }> = ({ type }) => {
   switch (type) {
